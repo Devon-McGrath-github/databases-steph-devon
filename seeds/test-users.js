@@ -7,7 +7,8 @@ exports.seed = function (knex, Promise) {
     knex('Users').insert({
       firstName: 'first1',
       lastName: 'last1',
-      username: 'user1'
+      username: 'user1',
+      pleasedontbreak: 'test'
     }),
     knex('Users').insert({
       firstName: 'first2',
