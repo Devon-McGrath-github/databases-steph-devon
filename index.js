@@ -1,5 +1,5 @@
-var config = require('./knexfile');
-var knex = require('knex')(config.development);
+var config = require('./knexfile').development;
+var knex = require('knex')(config);
 
 // updates the lastName, changing whatever the current value is to "smith"
 function update() {
@@ -37,7 +37,6 @@ knex('Users')
     firstName: 'Donald V2',
     lastName: 'Trump',
     username: 'TheBigMan',
-    pleasedontbreak: 'pizza'
   }, {
     firstName: 'Donald',
     lastName: 'hasselhoff',
